@@ -74,6 +74,17 @@ $btn-line-height: initial;
 	backdrop-filter: blur(21px);
 }
 
+@mixin lineClamp($num) {
+	display: -webkit-box;
+	-webkit-line-clamp: $num;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@mixin shadow() {
+	box-shadow: $shadow;
+}
+
 * {
 	line-height: initial;
 }
@@ -139,4 +150,63 @@ select {
 	background-image: url(../images/arrow-select.svg);
 	background-repeat: no-repeat;
 	background-position: calc(100% - size(20)) center;
+}
+
+.list__check {
+	li {
+		&::before {
+			content: url("../images/icon-check.svg");
+			position: absolute;
+			left: 0;
+			width: size(24);
+			height: size(24);
+			border-radius: 50%;
+			@include radialGradient();
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		position: relative;
+		padding-left: size(37);
+		&:not(:last-child) {
+			margin-bottom: size(30);
+		}
+	}
+}
+
+.slick-slider {
+	margin-bottom: 0;
+	.slick-arrow {
+		width: size(43);
+		height: size(43);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $white;
+		z-index: 1;
+		@include shadow();
+		@include transition(0.3s all ease-in-out);
+		&::before {
+			transform-origin: center;
+			content: url(../images/arrow-slider.svg);
+			line-height: initial;
+			@include transition(0.3s all ease-in-out);
+		}
+		&.slick-prev {
+			left: size(20);
+		}
+		&.slick-next {
+			right: size(20);
+			&::before {
+				transform: scale(-1, 1);
+			}
+		}
+		&:hover {
+			background: $primary;
+			&::before {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
 }
