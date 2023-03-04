@@ -5,8 +5,6 @@ $base-size: 16;
 	@return math.div($target, $context) * 1rem;
 }
 
-@import "../fonts/fonts";
-
 $font-family-sans-serif: "Roboto", sans-serif;
 
 $primary: #bd3a4a;
@@ -17,6 +15,7 @@ $body-bg: #eceae6;
 $dark: #060910;
 $white: #fff;
 $off-white: #f6f4f1;
+$light: #ccc;
 
 $theme-colors: (
 	"primary": $primary,
@@ -27,9 +26,11 @@ $theme-colors: (
 	"dark": $dark,
 	"white": $white,
 	"off-white": $off-white,
+	"light": $light,
 );
 
 $spacers: (
+	5: size(5),
 	10: size(10),
 	15: size(15),
 	20: size(20),
@@ -103,6 +104,7 @@ body {
 }
 
 a {
+	text-decoration: none;
 	@include transition(0.3s all ease-in-out);
 }
 
@@ -206,6 +208,36 @@ select {
 			background: $primary;
 			&::before {
 				filter: brightness(0) invert(1);
+			}
+		}
+	}
+	.slick-dots {
+		bottom: size(-50);
+		li {
+			width: size(18);
+			height: size(6);
+			border-radius: size(50);
+			overflow: hidden;
+			margin: 0;
+			@include transition(0.3s all ease-in-out);
+			&:not(:last-child) {
+				margin-right: size(5);
+			}
+			button {
+				width: size(18);
+				height: size(18);
+				background: $light;
+				@include transition(0.3s all ease-in-out);
+				&:hover {
+					background: $primary;
+				}
+			}
+			&.slick-active {
+				width: size(34);
+				button {
+					width: size(34);
+					background: $primary;
+				}
 			}
 		}
 	}

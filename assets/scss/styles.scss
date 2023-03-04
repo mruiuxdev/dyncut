@@ -241,7 +241,6 @@
 		flex: 0 0 size(645);
 		max-width: size(645);
 		.docs__slider {
-			border-radius: size(20);
 			.slick-slide {
 				img {
 					border-radius: size(20);
@@ -249,7 +248,8 @@
 			}
 		}
 	}
-	.videos {
+	.videos,
+	.blogs {
 		.col-lg-3 {
 			&:not(:last-child) {
 				margin-bottom: size(30);
@@ -265,6 +265,13 @@
 					left: 50%;
 					transform: translate(-50%, -50%);
 				}
+				.date {
+					position: absolute;
+					top: size(10);
+					left: size(10);
+					font-size: size(14);
+					@include radialGradient();
+				}
 			}
 			img {
 				border-radius: size(10);
@@ -275,6 +282,139 @@
 			&:hover {
 				@include shadow();
 				transform: translateY(size(-5));
+			}
+		}
+	}
+}
+
+.testimonials {
+	margin-top: size(-100);
+	position: relative;
+	z-index: 3;
+	.item {
+		border-radius: size(20);
+		.name {
+			font-size: size(20);
+		}
+	}
+	.testimonials__slider {
+		.slick-list {
+			margin: 0 size(-15);
+		}
+		.slick-slide {
+			margin: 0 size(15);
+		}
+	}
+}
+
+.education {
+	.data {
+		max-width: size(650);
+	}
+	.item {
+		border-radius: size(20);
+		.bg {
+			.play__youtube {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.date {
+				position: absolute;
+				top: size(10);
+				left: size(10);
+				font-size: size(14);
+				@include radialGradient();
+			}
+		}
+		img {
+			border-radius: size(10);
+		}
+		.title {
+			font-size: size(20);
+		}
+		&:hover {
+			@include shadow();
+			transform: translateY(size(-5));
+		}
+	}
+	.videos__slider {
+		.slick-list {
+			padding: size(20) size(20);
+		}
+		.slick-list {
+			margin: 0 size(-15);
+		}
+		.slick-slide {
+			margin: 0 size(15);
+		}
+		.slick-arrow {
+			&.slick-next {
+				right: size(-5);
+			}
+			&.slick-prev {
+				left: size(-5);
+			}
+		}
+	}
+}
+
+.footer {
+	font-size: size(14);
+	.title {
+		font-size: size(20);
+	}
+	.links {
+		& > a {
+			color: $white;
+			display: block;
+
+			&:not(:last-child) {
+				margin-bottom: size(15);
+			}
+			&:hover {
+				color: $primary;
+			}
+		}
+		&.features__links {
+			a {
+				flex: 0 0 calc(50% - size(15));
+				max-width: calc(50% - size(15));
+				&:nth-child(odd) {
+					margin-right: size(15);
+				}
+			}
+		}
+	}
+	.copyright {
+		.links {
+			a {
+				&:not(:last-child) {
+					margin-right: size(30);
+				}
+			}
+		}
+	}
+	.social {
+		.media {
+			a {
+				width: size(30);
+				height: size(30);
+				color: $secondary;
+				background: $off-white;
+				&:not(:last-child) {
+					margin-right: size(15);
+				}
+				svg {
+					width: size(18);
+					stroke-width: size(1);
+				}
+				&:hover {
+					@include shadow();
+					background: $primary;
+					color: $white;
+				}
 			}
 		}
 	}
