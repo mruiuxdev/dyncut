@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>DYNCUT: DDNS,Short URL, and text that is to the point</title>
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top mt-40 p-0">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/dyncut.svg" width="180" alt="dyncut">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav py-20 px-30 rounded-pill mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="/login" class="btn btn-outline-white">Get Started</a>
+        </div>
+    </nav>
+
+    <div class="banner bg-dark min-vh-100 pt-200">
+        <div class="container">
+            <div class="data text-center text-white mx-auto">
+                <div class="heading">
+                    <h1 class="fw-bold">The <span class="text-primary">Amazing Link</span> For <span
+                            class="text-primary">Everything</span></h1>
+                </div>
+                <div class="desc mt-30">
+                    <p>Sell everything, create memberships for fans, get closer to the audience. Do it easily.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-50">
+                <div class="mx-auto col-xl-8 col-lg-9 col-md-10">
+                    <div class="services__tabs rounded p-30">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-outline-white active" id="pills-dns-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-dns" type="button" role="tab" aria-controls="pills-dns"
+                                    aria-selected="true">DNS Dynamic</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-outline-white" id="pills-url-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-url" type="button" role="tab" aria-controls="pills-url"
+                                    aria-selected="false">Short URL</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-outline-white" id="pills-paste-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-paste" type="button" role="tab" aria-controls="pills-paste"
+                                    aria-selected="false">Paste-It</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-30" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-dns" role="tabpanel"
+                                aria-labelledby="pills-dns-tab" tabindex="0">
+                                <div class="form rounded-pill bg-transparent p-20">
+                                    <form action="/" class="d-flex align-items-center justify-content-between">
+                                        <div class="icon">
+                                            <img src="/assets/images/icon-link.svg" alt="link" width="30" />
+                                        </div>
+                                        <div class="line mx-20"></div>
+                                        <input type="text" name="dns" id="dns"
+                                            placeholder="Paste long url and shorten it" class="form-control border-0">
+                                        <div class="line mx-20"></div>
+                                        <select name="domain" id="domain" class="form-control border-0 ">
+                                            <option value="1">vpnmo.com</option>
+                                            <option value="3">hostdns.me</option>
+                                            <option value="4">dn3.co</option>
+                                            <option value="5">go2host.co</option>
+                                            <option value="6">host2.me</option>
+                                            <option value="8">jump2me.com</option>
+                                            <option value="9">net2me.me</option>
+                                            <option value="10">g2url.com</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-primary d-flex align-items-center"><img
+                                                src="/assets/images/icon-create.svg" width="18" class="me-10"
+                                                alt="create"> Create</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-url" role="tabpanel" aria-labelledby="pills-url-tab"
+                                tabindex="0">
+                                <div class="form rounded-pill bg-transparent p-20">
+                                    <form action="/" class="d-flex align-items-center justify-content-between">
+                                        <div class="icon">
+                                            <img src="/assets/images/icon-link.svg" alt="link" width="30" />
+                                        </div>
+                                        <div class="line mx-20"></div>
+                                        <input type="text" name="dns" id="dns"
+                                            placeholder="Paste long url and shorten it" class="form-control border-0">
+                                        <div class="line mx-20"></div>
+                                        <select name="domain" id="domain" class="form-control border-0 ">
+                                            <option value="1">vpnmo.com</option>
+                                            <option value="3">hostdns.me</option>
+                                            <option value="4">dn3.co</option>
+                                            <option value="5">go2host.co</option>
+                                            <option value="6">host2.me</option>
+                                            <option value="8">jump2me.com</option>
+                                            <option value="9">net2me.me</option>
+                                            <option value="10">g2url.com</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-primary d-flex align-items-center"><img
+                                                src="/assets/images/icon-create.svg" width="18" class="me-10"
+                                                alt="create">Shorten</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-paste" role="tabpanel"
+                                aria-labelledby="pills-paste-tab" tabindex="0">
+                                <div class="form rounded-pill bg-transparent p-20">
+                                    <form action="/" class="d-flex align-items-center justify-content-between">
+                                        <div class="icon">
+                                            <img src="/assets/images/icon-link.svg" alt="link" width="30" />
+                                        </div>
+                                        <div class="line mx-20"></div>
+                                        <input type="text" name="dns" id="dns"
+                                            placeholder="Paste long url and shorten it" class="form-control border-0">
+                                        <div class="line mx-20"></div>
+                                        <select name="domain" id="domain" class="form-control border-0 ">
+                                            <option value="1">vpnmo.com</option>
+                                            <option value="3">hostdns.me</option>
+                                            <option value="4">dn3.co</option>
+                                            <option value="5">go2host.co</option>
+                                            <option value="6">host2.me</option>
+                                            <option value="8">jump2me.com</option>
+                                            <option value="9">net2me.me</option>
+                                            <option value="10">g2url.com</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-primary d-flex align-items-center"><img
+                                                src="/assets/images/icon-create.svg" width="18" class="me-10"
+                                                alt="create">Paste It</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

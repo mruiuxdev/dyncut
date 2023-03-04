@@ -1,0 +1,88 @@
+@import "./configuration";
+
+.navbar {
+	.navbar-nav {
+		@include radialGradient();
+		.nav-item {
+			&:not(:last-child) {
+				margin-right: size(45);
+			}
+			.nav-link {
+				color: $white;
+				padding: 0;
+				&:hover,
+				&.active {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.banner {
+	background: $dark url(../images/banner-bg.webp) no-repeat bottom
+		center/contain;
+	.data {
+		max-width: size(485);
+	}
+}
+
+.services__tabs {
+	@include radialGradient();
+	.nav-pills {
+		.nav-item {
+			&:not(:last-child) {
+				margin-right: size(15);
+			}
+			.btn {
+				padding: size(10) size(20);
+				&.active,
+				&:hover {
+					background: $primary;
+					color: $white;
+					border-color: $primary;
+				}
+				&:hover {
+					transform: none;
+				}
+			}
+		}
+	}
+	.form {
+		border: size(1) solid rgba($white, 0.5);
+		.icon {
+			flex: 0 0 size(30);
+			max-width: size(30);
+		}
+		.line {
+			flex: 0 0 size(1);
+			width: size(1);
+			height: size(34);
+			background: rgba($white, 0.5);
+		}
+		.form-control {
+			color: $white;
+			background-color: transparent;
+			&::placeholder {
+				color: $white;
+			}
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		select {
+			background-image: url(../images/white-arrow-select.svg);
+			max-width: size(166);
+			flex: 0 0 size(166);
+			option {
+				color: $secondary;
+			}
+		}
+		.btn {
+			&:hover {
+				transform: translateY(0) translateX(size(5));
+			}
+		}
+	}
+}
