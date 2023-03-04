@@ -16,6 +16,7 @@ $body-color: $third;
 $body-bg: #eceae6;
 $dark: #060910;
 $white: #fff;
+$off-white: #f6f4f1;
 
 $theme-colors: (
 	"primary": $primary,
@@ -25,6 +26,7 @@ $theme-colors: (
 	"body-bg": $body-bg,
 	"dark": $dark,
 	"white": $white,
+	"off-white": $off-white,
 );
 
 $spacers: (
@@ -63,10 +65,6 @@ $btn-line-height: initial;
 
 @import "../libs/bootstrap/scss/bootstrap";
 
-* {
-	line-height: initial;
-}
-
 @mixin radialGradient() {
 	background: radial-gradient(
 		97.57% 210.75% at 0.9% 2.98%,
@@ -74,6 +72,19 @@ $btn-line-height: initial;
 		rgb(255 255 255 / 5%) 100%
 	);
 	backdrop-filter: blur(21px);
+}
+
+* {
+	line-height: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0;
 }
 
 body {
@@ -86,15 +97,32 @@ a {
 
 .btn {
 	@include transition(0.3s all ease-in-out);
+	width: fit-content;
 	&:hover {
 		transform: translateY(-2px);
+	}
+	&.btn__arrow {
+		img {
+			@include transition(0.3s all ease-in-out);
+		}
+		&:hover {
+			transform: translateY(0) translateX(size(5));
+			img {
+				transform: translateX(size(1));
+			}
+		}
 	}
 }
 
 .heading {
-	h1,
-	h2 {
+	h1 {
 		font-size: size(45);
+	}
+}
+
+.heading {
+	h2 {
+		font-size: size(35);
 	}
 }
 
