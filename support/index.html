@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DYNCUT: DDNS,Short URL, and text that is to the point">
+    <meta name="keywords" content="dyncut, domain, short url, paste it, multiple domain, api">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>DYNCUT: DDNS,Short URL, and text that is to the point</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="/assets/libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/dyncut.svg" width="180" alt="dyncut" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav py-lg-20 px-30 py-md-50 py-30 rounded-pill mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="/register">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="/login" class="btn d-md-inline-block d-none">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <div class="banner internal__banner bg-dark py-md-200 pt-100 pb-200">
+            <div class="container">
+                <div class="text-white">
+                    <div class="heading">
+                        <h1 class="fw-bold">
+                            Need Help <br>
+                            You Arrived At The <br> <span class="text-primary">Place Right</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="form__search rounded-pill mt-md-50 mt-30 p-md-20 p-10">
+                    <form action="" class="d-flex align-items-center">
+                        <input type="text" name="search" id="search" class="form-control"
+                            placeholder="Search documentation, coummunity connect...">
+                        <button type="submit"
+                            class="btn p-0 d-flex align-items-center justify-content-center btn-primary">
+                            <img src="/assets/images/icon-search.svg" width="20" alt="search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="support__categories">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#"
+                            class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center">
+                            <div class="icon">
+                                <img src="/assets/images/notifications.svg" width="50" alt="notifications">
+                            </div>
+                            <div class="title mt-20 fw-semibold text-secondary">
+                                Notifications
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#"
+                            class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center">
+                            <div class="icon">
+                                <img src="/assets/images/documentations.svg" width="50" alt="documentations">
+                            </div>
+                            <div class="title mt-20 fw-semibold text-secondary">
+                                Documentations
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#"
+                            class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center">
+                            <div class="icon">
+                                <img src="/assets/images/downloads.svg" width="50" alt="downloads">
+                            </div>
+                            <div class="title mt-20 fw-semibold text-secondary">
+                                Downloads
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#"
+                            class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center">
+                            <div class="icon">
+                                <img src="/assets/images/community.svg" width="50" alt="community">
+                            </div>
+                            <div class="title mt-20 fw-semibold text-secondary">
+                                Community
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faqs__accordions py-lg-100 py-md-80 py-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="data mx-auto text-center">
+                            <div class="text-primary">Faqs</div>
+                            <div class="heading text-secondary mt-20">
+                                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                            </div>
+                        </div>
+                        <div class="accordion mt-50" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Is there a free trial available?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can try us for free for 30 days.it you want, well provide you with a
+                                        free, personalized 30-minute onboarding call to get you up and running as soon
+                                        as possible.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button  fw-semibold collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Can I change my plan later?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can try us for free for 30 days.it you want, well provide you with a
+                                        free, personalized 30-minute onboarding call to get you up and running as soon
+                                        as possible.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button  fw-semibold collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What is your cancellation policy?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can try us for free for 30 days.it you want, well provide you with a
+                                        free, personalized 30-minute onboarding call to get you up and running as soon
+                                        as possible.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button  fw-semibold collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        How do l change my account email?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can try us for free for 30 days.it you want, well provide you with a
+                                        free, personalized 30-minute onboarding call to get you up and running as soon
+                                        as possible.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="no__answer position-relative bg-dark py-lg-100 py-md-80 py-50">
+            <div class="container">
+                <div class="data text-center">
+                    <div class="heading text-white">
+                        <h2 class="fw-bold">Can’t find the answer of your issue</h2>
+                    </div>
+                    <div class="mt-md-50 mt-30">
+                        <a href="/contact" class="btn btn-primary btn__arrow d-flex align-items-center mx-auto">
+                            <span>Contact Us</span>
+                            <img src="/assets/images/arrow-link.svg" width="20" class="ms-10" alt="arrow" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faqs support__faqs position-relative bg-body-bg py-lg-100 py-md-80 py-50">
+            <div class="container">
+                <div class="data mx-auto text-center">
+                    <div class="text-primary">FAQs</div>
+                    <div class="heading text-secondary mt-20">
+                        <h2 class="fw-bold">
+                            Exploring the simple of setting up a DDNS: a step-by-step guide
+                        </h2>
+                    </div>
+                    <div class="desc mx-auto mt-30">
+                        <p>
+                            This modern platform has eliminated of all the complicated setup
+                            required for DDNS
+                        </p>
+                    </div>
+                </div>
+                <ul class="nav nav-pills mx-auto justify-content-center rounded-pill p-10 mt-md-50 mt-30" id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn mb-mb-0 mb-20" id="pills-videos-tab" data-bs-toggle="pill" data-bs-target="#pills-videos"
+                            type="button" role="tab" aria-controls="pills-videos" aria-selected="true">
+                            How To Videos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn active" id="pills-doc-tab" data-bs-toggle="pill" data-bs-target="#pills-doc"
+                            type="button" role="tab" aria-controls="pills-doc" aria-selected="false">
+                            Help Docs
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn" id="pills-blogs-tab" data-bs-toggle="pill" data-bs-target="#pills-blogs"
+                            type="button" role="tab" aria-controls="pills-blogs" aria-selected="false">
+                            <span>Explore Blogs</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-md-50 mt-30" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-videos" role="tabpanel" aria-labelledby="pills-videos-tab"
+                        tabindex="0">
+                        <div class="videos">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="https://www.youtube.com/channel/UCo_dqmGQfKfkuN91s1Cmfkw" target="_blank"
+                                        class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <img src="/assets/images/youtube.png" width="58" alt="youtube"
+                                                class="play__youtube" />
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="https://www.youtube.com/channel/UCo_dqmGQfKfkuN91s1Cmfkw" target="_blank"
+                                        class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <img src="/assets/images/youtube.png" width="58" alt="youtube"
+                                                class="play__youtube" />
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="https://www.youtube.com/channel/UCo_dqmGQfKfkuN91s1Cmfkw" target="_blank"
+                                        class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <img src="/assets/images/youtube.png" width="58" alt="youtube"
+                                                class="play__youtube" />
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="https://www.youtube.com/channel/UCo_dqmGQfKfkuN91s1Cmfkw" target="_blank"
+                                        class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <img src="/assets/images/youtube.png" width="58" alt="youtube"
+                                                class="play__youtube" />
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="https://www.youtube.com/channel/UCo_dqmGQfKfkuN91s1Cmfkw" target="_blank"
+                                        class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <img src="/assets/images/youtube.png" width="58" alt="youtube"
+                                                class="play__youtube" />
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="pills-doc" role="tabpanel"
+                        aria-labelledby="pills-doc-tab" tabindex="0">
+                        <div class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between">
+                            <div class="data__slider">
+                                <div class="docs__slider">
+                                    <div>
+                                        <img src="/assets/images/help-doc.jpg" class="img-fluid" alt="help" />
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/help-doc.jpg" class="img-fluid" alt="help" />
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/help-doc.jpg" class="img-fluid" alt="help" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inside__data mt-lg-0 mt-30">
+                                <ul class="list-unstyled list__check list__check__primary mb-0">
+                                    <li>Very rich documentation and step by step guide</li>
+                                    <li>
+                                        Full Rest API documentation with details description
+                                    </li>
+                                    <li>DDNS desktop clients help files</li>
+                                    <li>Short URL documentations step by step guide</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-blogs" role="tabpanel" aria-labelledby="pills-blogs-tab"
+                        tabindex="0">
+                        <div class="blogs">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="#" class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <span
+                                                class="date rounded-pill py-10 px-15 bg-off-white text-secondary d-inline-block">25
+                                                Feb 2022</span>
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="#" class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <span
+                                                class="date rounded-pill py-10 px-15 bg-off-white text-secondary d-inline-block">25
+                                                Feb 2022</span>
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="#" class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <span
+                                                class="date rounded-pill py-10 px-15 bg-off-white text-secondary d-inline-block">25
+                                                Feb 2022</span>
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="#" class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <span
+                                                class="date rounded-pill py-10 px-15 bg-off-white text-secondary d-inline-block">25
+                                                Feb 2022</span>
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <a href="#" class="item d-block p-20 bg-off-white">
+                                        <div class="bg position-relative">
+                                            <img src="/assets/images/video-bg.jpg" class="img-fluid d-block"
+                                                alt="video name" />
+                                            <span
+                                                class="date rounded-pill py-10 px-15 bg-off-white text-secondary d-inline-block">25
+                                                Feb 2022</span>
+                                        </div>
+                                        <div class="title fw-semibold mt-15 text-secondary">
+                                            How do you use short url, why and when?
+                                        </div>
+                                        <div class="desc mt-15 text-third">
+                                            This modern platform has eliminated of all the
+                                            complicated setup required for DDNS
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark pt-md-50 pt-30 pb-30 text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <a href="/" class="logo d-block">
+                        <img src="/assets/images/dyncut-footer.svg" width="200" class="img-fluid" alt="dyncut" />
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-30">
+                    <div class="title fw-semibold">Features</div>
+                    <div class="links features__links d-flex flex-wrap mt-30">
+                        <a href="/">Passwordless Security</a>
+                        <a href="/">AI Powered</a>
+                        <a href="/">Compatible HTTP Update Protocol</a>
+                        <a href="/">API Support</a>
+                        <a href="/">Multiple Domain Names</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-30">
+                    <div class="title fw-semibold">Resources</div>
+                    <div class="links d-flex flex-wrap mt-30">
+                        <a href="/">Videos</a>
+                        <a href="/">Online Documentations</a>
+                        <a href="/">Experts Blog</a>
+                        <a href="/">Contact Support</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mt-lg-0 mt-30">
+                    <div class="title fw-semibold">Subscription</div>
+                    <div class="links d-flex flex-wrap mt-30">
+                        <a href="/">Offers & Pricing</a>
+                        <a href="/">FAQs</a>
+                        <a href="/">Signup</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-30 pt-md-0 pt-30">
+                <div
+                    class="d-flex flex-md-nowrap flex-wrap justify-content-md-between justify-content-center align-items-end">
+                    <div>
+                        <div class="links d-flex">
+                            <a href="/">Terms & Conditions</a>
+                            <a href="/">Privacy Policy</a>
+                        </div>
+                        <div class="mt-md-20 mt-10">
+                            <div id="copyrightYear"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="social d-flex align-items-center justify-content-md-start justify-content-center mt-md-0 mt-20">
+                        <div class="title fw-semibold me-20 d-md-inline-block d-none">
+                            Follow Us:
+                        </div>
+                        <div class="media d-flex align-items-center">
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libs/jquery/jquery.min.js"></script>
+    <script src="/assets/libs/slick/slick.min.js"></script>
+    <script src="/assets/scripts/scripts.js"></script>
+    <script>
+        const copyrightFooter = `
+        © Copyright ${new Date().getFullYear()} dyncut.com - All Rights Reserved.
+`;
+        document.getElementById('copyrightYear').innerHTML = copyrightFooter;
+
+        feather.replace();
+    </script>
+</body>
+
+</html>
