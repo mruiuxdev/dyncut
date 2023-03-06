@@ -256,6 +256,7 @@
 		border-radius: size(30);
 		@include radialGradient();
 		z-index: 1;
+		opacity: .8;
 	}
 	.nav-pills {
 		position: relative;
