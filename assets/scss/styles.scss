@@ -882,7 +882,7 @@
 }
 
 .support__categories {
-	margin-top: size(-98);
+	margin-top: size(-100);
 	position: relative;
 	z-index: 2;
 	.col-lg-3 {
@@ -891,10 +891,52 @@
 		}
 	}
 	.item {
+		@include transition(.3s all ease-in-out);
 		.title {
 			font-size: size(20);
 			@include media-breakpoint-down(md) {
 				font-size: size(14);
+			}
+		}
+		&:hover {
+			@include shadow();
+		}
+	}
+}
+
+.pricing {
+	margin-top: size(-100);
+	position: relative;
+	z-index: 2;
+	.col-lg-4 {
+		&:not(:last-child) {
+			margin-bottom: size(30);
+		}
+	}
+	.item {
+		@include transition(.3s all ease-in-out);
+		.title {
+			font-size: size(20);
+			@include media-breakpoint-down(md) {
+				font-size: size(14);
+			}
+		}
+		.num {
+			font-size: size(45);
+			@include media-breakpoint-down(lg) {
+				font-size: size(35);
+			}
+			@include media-breakpoint-down(md) {
+				font-size: size(25);
+			}
+			span {
+				font-size: size(20);
+				@include media-breakpoint-down(lg) {
+					font-size: size(18);
+				}
+				@include media-breakpoint-down(md) {
+					font-size: size(16);
+				}
 			}
 		}
 		&:hover {
@@ -1044,7 +1086,8 @@
 		}
 	}
 	&.verify__email {
-		background: $dark url(../images/internal-banner-bg.png) no-repeat top right/100%;
+		background: $dark url(../images/internal-banner-bg.png) no-repeat top
+			right/100%;
 		.box__email {
 			max-width: size(573);
 			border-radius: size(30);
@@ -1055,7 +1098,7 @@
 			}
 		}
 		.email {
-			background: rgba($primary, .2);
+			background: rgba($primary, 0.2);
 			border: size(1) solid $primary;
 		}
 	}
