@@ -138,6 +138,7 @@ a {
 	@include transition(0.3s all ease-in-out);
 }
 
+
 .btn {
 	@include transition(0.3s all ease-in-out);
 	width: fit-content;
@@ -187,6 +188,9 @@ a {
 		@include media-breakpoint-down(md) {
 			font-size: size(14);
 		}
+	}
+	&:focus {
+		border-color: $light;
 	}
 }
 
