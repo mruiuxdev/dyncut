@@ -50,6 +50,7 @@ $spacers: (
 	90: size(90),
 	95: size(95),
 	100: size(100),
+	130: size(130),
 	200: size(200),
 );
 
@@ -126,6 +127,7 @@ h6 {
 
 body {
 	font-size: size(16);
+	position: relative;
 	@include media-breakpoint-down(md) {
 		font-size: size(14);
 	}

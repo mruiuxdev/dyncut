@@ -217,13 +217,38 @@
 
 .form__search {
 	max-width: size(810);
-	@include radialGradient();
-	border: size(1) solid rgba($white, 0.5);
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include radialGradient();
+		border-radius: size(100);
+		z-index: 0;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: calc(100% - size(-1));
+		height: 100%;
+		border: 1px solid rgba($white, 0.5);
+		border-radius: size(100);
+		z-index: 0;
+	}
+	& > * {
+		position: relative;
+		z-index: 2;
+	}
 	.form-control {
 		background: transparent;
 		border: none;
-		flex: 0 0 calc(100% - size(50));
-		max-width: calc(100% - size(50));
+		flex: 0 0 calc(100% - size(60));
+		max-width: calc(100% - size(60));
 		color: $white;
 		&::placeholder {
 			color: $white;
@@ -234,8 +259,8 @@
 		}
 	}
 	.btn {
-		width: size(50);
-		height: size(50);
+		width: size(40);
+		height: size(40);
 		border-radius: size(100);
 		&:hover {
 			transform: translateX(size(5));
@@ -256,7 +281,7 @@
 		border-radius: size(30);
 		@include radialGradient();
 		z-index: 1;
-		opacity: .8;
+		opacity: 0.8;
 	}
 	.nav-pills {
 		position: relative;
@@ -658,11 +683,6 @@
 				@include shadow();
 			}
 		}
-		.videos,
-		.blogs {
-			.item {
-			}
-		}
 	}
 }
 
@@ -879,6 +899,184 @@
 		}
 		&:hover {
 			@include shadow();
+		}
+	}
+}
+
+.account {
+	@include media-breakpoint-down(lg) {
+		background: url(../images/account-bg.jpg) no-repeat center center/cover;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($dark, 0.8);
+		display: none;
+		@include media-breakpoint-down(lg) {
+			display: block;
+		}
+	}
+	.bg {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+	.form {
+		@include media-breakpoint-up(md) {
+			background: $dark;
+		}
+		@include media-breakpoint-down(lg) {
+			max-width: size(450);
+			margin: 0 auto;
+			background: transparent;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../images/account-banner.png) no-repeat top right/100%;
+			z-index: 0;
+			pointer-events: none;
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+		}
+		& > * {
+			position: relative;
+			z-index: 2;
+		}
+		.form-group {
+			border: size(1) solid rgba($white, 0.5);
+			height: size(56);
+			.label__icon {
+				pointer-events: none;
+				position: absolute;
+				top: 50%;
+				left: size(15);
+				transform: translate(0, -50%);
+				filter: brightness(0) invert(1);
+			}
+			.form-control {
+				background-color: transparent;
+				border: none;
+				padding: size(10);
+				color: #fff;
+				margin-top: size(-10);
+				margin-left: size(-10);
+				width: calc(100% + size(24));
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+				&::placeholder {
+					color: #fff;
+				}
+			}
+			select {
+				background-image: url(../images/white-arrow-select.svg);
+				option {
+					color: $secondary;
+				}
+			}
+			.form-check-label {
+				cursor: pointer;
+			}
+			.form-check-input {
+				&:focus {
+					box-shadow: none;
+					outline: none;
+				}
+			}
+		}
+		.or {
+			z-index: 2;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				background: rgba($white, 0.1);
+				width: calc(50% - size(70));
+				height: 1px;
+				z-index: 1;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background: rgba($white, 0.1);
+				width: calc(50% - size(70));
+				height: 1px;
+				z-index: 1;
+			}
+			span {
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+	.btn-outline-white {
+		@include media-breakpoint-down(md) {
+			padding: size(13) size(20);
+		}
+	}
+	.icon-google {
+		@include media-breakpoint-down(md) {
+			width: size(20);
+		}
+	}
+	&.account__signup {
+		.form {
+			@include media-breakpoint-down(lg) {
+				max-width: size(650);
+			}
+		}
+	}
+}
+
+.account__footer {
+	font-size: size(14);
+	position: absolute;
+	z-index: 3;
+	bottom: size(30);
+	left: 0;
+	width: 100%;
+	.heading {
+		h1 {
+			@include media-breakpoint-down(md) {
+				font-size: size(25);
+			}
+		}
+	}
+	.media {
+		a {
+			width: size(30);
+			height: size(30);
+			color: $secondary;
+			background: $off-white;
+			&:not(:last-child) {
+				margin-right: size(15);
+			}
+			svg {
+				width: size(18);
+				stroke-width: size(1);
+			}
+			&:hover {
+				@include shadow();
+				background: $primary;
+				color: $white;
+			}
 		}
 	}
 }
