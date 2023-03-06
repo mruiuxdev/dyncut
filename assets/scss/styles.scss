@@ -99,7 +99,7 @@
 	.navbar-toggler {
 		position: absolute;
 		top: size(10);
-		right: size(30);
+		right: size(10);
 		border: none;
 		@include transition(0.3s all ease-in-out);
 		&:focus {
