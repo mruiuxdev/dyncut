@@ -50,6 +50,9 @@
 				opacity: 0.5;
 				z-index: 1;
 				@include transition(0.3s all ease-in-out);
+				@include media-breakpoint-down(lg) {
+					opacity: 0;
+				}
 			}
 			.nav-item {
 				position: relative;
