@@ -1043,6 +1043,22 @@
 			}
 		}
 	}
+	&.verify__email {
+		background: $dark url(../images/internal-banner-bg.png) no-repeat top right/100%;
+		.box__email {
+			max-width: size(573);
+			border-radius: size(30);
+			@include radialGradient();
+			margin: size(-100) auto 0;
+			@include media-breakpoint-down(md) {
+				max-width: 90%;
+			}
+		}
+		.email {
+			background: rgba($primary, .2);
+			border: size(1) solid $primary;
+		}
+	}
 }
 
 .account__footer {
