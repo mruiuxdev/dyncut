@@ -35,6 +35,10 @@
 </head>
 
 <body>
+    <div id="loader" class="bg-white">
+        <img src="/assets/images/dyncut.gif" width="120" alt="dyncut" class="mb-10">
+        <img src="/assets/images/dyncut-loader.svg" width="200" alt="dyncut">
+    </div>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -99,39 +103,61 @@
 
         <div class="form__contact">
             <div class="container">
-                <form action="">
+                <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-xl-10 col-lg-11 mx-auto">
                             <div class="row  rounded p-30 px-md-20 px-0 bg-off-white">
                                 <div class="col-md-6">
-                                    <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                                    <div
+                                        class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                         <label class="label__icon" for="user">
                                             <img src="/assets/images/icon-user.svg" width="25" alt="user">
                                         </label>
                                         <input type="text" name="user" id="user" class="form-control"
-                                            placeholder="Full name">
+                                            placeholder="Full name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter full name
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                                    <div
+                                        class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                         <label class="label__icon" for="email">
                                             <img src="/assets/images/icon-email.svg" width="25" alt="email">
                                         </label>
                                         <input type="email" name="email" id="email" class="form-control"
-                                            placeholder="Email address">
+                                            placeholder="Email address" required>
+                                        <div class="invalid-feedback">
+                                            Please enter email address
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                                    <div
+                                        class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                         <label class="label__icon" for="phone">
                                             <img src="/assets/images/icon-phone.svg" width="25" alt="phone">
                                         </label>
                                         <input type="phone" name="phone" id="phone" class="form-control"
-                                            placeholder="Phone">
+                                            placeholder="Phone" required>
+                                        <div class="invalid-feedback">
+                                            Please enter phone
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                                    <div
+                                        class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                         <label class="label__icon" for="countyr">
                                             <img src="/assets/images/icon-country.svg" width="25" alt="country">
                                         </label>
@@ -376,38 +402,62 @@
                                             <option value="238">Zambia 260</option>
                                             <option value="239">Zimbabwe 263</option>
                                         </select>
+
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                                    <div
+                                        class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                         <label class="label__icon" for="category">
                                             <img src="/assets/images/icon-category.svg" width="25" alt="category">
                                         </label>
-                                        <select class="form-control" id="category" name="category" required="">
+                                        <select class="form-control" id="category" name="category" required>
                                             <option class="option-list" disabled="" selected="" value="">Select category
                                             </option>
                                             <option value="General">General</option>
                                             <option value="Technical">Technical</option>
                                             <option value="Payment">Payment</option>
                                         </select>
+                                        <div class="invalid-feedback">
+                                            Please select category
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea name="" id="" cols="30" class="mb-30 form-control"
-                                        placeholder="Your Question"></textarea>
+                                    <div class="has-validation">
+                                        <textarea name="" id="" cols="30" class="mb-30 form-control"
+                                            placeholder="Your Question" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please enter your message
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-12 mb-30">
                                     <div
                                         class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between">
                                         <div class="d-flex align-items-center flex-md-nowrap flex-wrap">
-                                            <input type="text" name="captcha" id="captcha"
-                                                class="form-control captcha me-md-30 me-0 mb-md-0 mb-30"
-                                                placeholder="Enter text in image">
+                                            <div class="has-validation me-md-30 me-0 mb-md-0 mb-30">
+                                                <input type="text" name="captcha" id="captcha"
+                                                    class="form-control captcha" placeholder="Enter text in image"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your text im images
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
                                             <img src="/assets/images/captcha.jpg" width="363" alt="captcha"
                                                 class="rounded-pill">
                                         </div>
                                         <button type="submit"
-                                            class="btn btn-primary btn__arrow d-flex  text-center align-items-center ms-auto mt-lg-0 mt-30">
+                                            class="btn btn-primary btn__arrow d-flex text-center align-items-center justify-content-center ms-auto mt-lg-0 mt-30">
                                             <span>Contact Us</span>
                                             <img src="/assets/images/arrow-link.svg" width="20" class="ms-10"
                                                 alt="arrow" />

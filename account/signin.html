@@ -35,12 +35,16 @@
 </head>
 
 <body>
+    <div id="loader" class="bg-white">
+        <img src="/assets/images/dyncut.gif" width="120" alt="dyncut" class="mb-10">
+        <img src="/assets/images/dyncut-loader.svg" width="200" alt="dyncut">
+    </div>
     <main class="overflow-hidden">
         <div class="account min-vh-100 position-relative">
             <div class="row g-0">
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-7">
                     <div
-                        class="form py-xl-100 py-lg-100 py-md-100 pt-50 pb-130 px-lg-50 px-20 min-vh-100 position-relative">
+                        class="form h-100 py-xl-100 py-lg-100 py-md-100 pt-50 pb-130 px-lg-50 px-20 min-vh-100 position-relative">
                         <div class="logo text-center">
                             <a href="/">
                                 <img src="/assets/images/dyncut-footer.svg" width="137" alt="dyncut">
@@ -52,20 +56,34 @@
                         <div class="desc text-center text-white mt-30">
                             Welcome, please enter your details
                         </div>
-                        <form action="/" class="mt-30">
-                            <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                        <form action="/index.html" class="mt-30 needs-validation" novalidate>
+                            <div
+                                class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                 <label class="label__icon" for="emailPhone">
                                     <img src="/assets/images/icon-email-phone.svg" width="25" alt="email-phone">
                                 </label>
                                 <input type="text" name="emailPhone" id="emailPhone" class="form-control"
-                                    placeholder="Email address or phone number">
+                                    placeholder="Email address or phone number" required>
+                                <div class="invalid-feedback">
+                                    Please enter email or phone
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
-                            <div class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill">
+                            <div
+                                class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
                                 <label class="label__icon" for="password">
                                     <img src="/assets/images/icon-password.svg" width="25" alt="password">
                                 </label>
                                 <input type="password" name="password" id="password" class="form-control"
-                                    placeholder="Password">
+                                    placeholder="Password" required>
+                                <div class="invalid-feedback">
+                                    Please enter password
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
                             </div>
                             <div class="form-group mb-30 d-flex align-items-center justify-content-between border-0">
                                 <div class="form-check">
@@ -95,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-lg-block d-none">
+                <div class="col-xl-6 col-lg-5 d-lg-block d-none">
                     <div class="bg min-vh-100 h-100">
                         <img src="/assets/images/account-bg.jpg" class="img-fluid" alt="account">
                     </div>

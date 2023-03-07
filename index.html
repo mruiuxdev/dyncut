@@ -35,6 +35,10 @@
 </head>
 
 <body>
+    <div id="loader" class="bg-white">
+        <img src="/assets/images/dyncut.gif" width="120" alt="dyncut" class="mb-10">
+        <img src="/assets/images/dyncut-loader.svg" width="200" alt="dyncut">
+    </div>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -128,17 +132,30 @@
                             <div class="tab-content mt-30" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-dns" role="tabpanel"
                                     aria-labelledby="pills-dns-tab" tabindex="0">
-                                    <div class="form bg-transparent p-20">
+                                    <div class="form p-20">
                                         <form action="/"
-                                            class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between">
+                                            class="d-flex flex-lg-nowrap flex-wrap align-items-center needs-validation"
+                                            novalidate>
                                             <div class="icon">
                                                 <img src="/assets/images/icon-link.svg" alt="link" width="30" />
                                             </div>
                                             <div class="line mx-20"></div>
-                                            <input type="text" name="dns" id="dns"
-                                                placeholder="Paste long url and shorten it" class="form-control" />
+                                            <div class="has-validation">
+                                                <label for="dns" class="d-none"></label>
+                                                <input type="text" name="dns" id="dns"
+                                                    placeholder="Type in your own new subdomain" class="form-control"
+                                                    required />
+                                                <div class="invalid-feedback">
+                                                    error: name must be 4 character minimum and letters and numbers
+                                                    only
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
                                             <div class="line mx-20"></div>
-                                            <select name="domain" id="domain" class="form-control">
+                                            <label for="domainid" class="d-none"></label>
+                                            <select name="domainid" id="domainid" class="form-control">
                                                 <option value="1">vpnmo.com</option>
                                                 <option value="3">hostdns.me</option>
                                                 <option value="4">dn3.co</option>
@@ -159,17 +176,28 @@
                                 </div>
                                 <div class="tab-pane fade" id="pills-url" role="tabpanel"
                                     aria-labelledby="pills-url-tab" tabindex="0">
-                                    <div class="form bg-transparent p-20">
-                                        <form action="/"
-                                            class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between">
+                                    <div class="form p-20">
+                                        <form
+                                            class="d-flex flex-lg-nowrap flex-wrap align-items-center needs-validation"
+                                            novalidate>
                                             <div class="icon">
                                                 <img src="/assets/images/icon-link.svg" alt="link" width="30" />
                                             </div>
                                             <div class="line mx-20"></div>
-                                            <input type="text" name="dns" id="dns"
-                                                placeholder="Paste long url and shorten it" class="form-control" />
+                                            <div class="has-validation">
+                                                <label for="url" class="d-none"></label>
+                                                <input type="text" name="longurl" id="url"
+                                                    placeholder="Paste your long url" class="form-control" required />
+                                                <div class="invalid-feedback short__url__valid">
+                                                    Not valid url
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
                                             <div class="line mx-20"></div>
-                                            <select name="domain" id="domain" class="form-control">
+                                            <label for="urldomain" class="d-none"></label>
+                                            <select name="domainid" id="urldomain" class="form-control">
                                                 <option value="1">vpnmo.com</option>
                                                 <option value="3">hostdns.me</option>
                                                 <option value="4">dn3.co</option>
@@ -190,17 +218,21 @@
                                 </div>
                                 <div class="tab-pane fade" id="pills-paste" role="tabpanel"
                                     aria-labelledby="pills-paste-tab" tabindex="0">
-                                    <div class="form bg-transparent p-20">
-                                        <form action="/"
-                                            class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between">
-                                            <div class="icon">
-                                                <img src="/assets/images/icon-link.svg" alt="link" width="30" />
+                                    <div class="form paste__it__validation p-20">
+                                        <form action="/" class="needs-validation" novalidate>
+                                            <div class="has-validation">
+                                                <label for="w3review" name="pastetext" class="d-none"></label>
+                                                <textarea class="form-control" id="w3review" required rows="3"
+                                                    placeholder="Paste here"></textarea>
+                                                <div class="invalid-feedback">
+                                                    Not valid
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
                                             </div>
-                                            <div class="line mx-20"></div>
-                                            <input type="text" name="dns" id="dns"
-                                                placeholder="Paste long url and shorten it" class="form-control" />
-                                            <div class="line mx-20"></div>
-                                            <select name="domain" id="domain" class="form-control">
+                                            <label for="URLid" class="d-none"></label>
+                                            <select name="URLid" id="URLid" class="form-control mt-20">
                                                 <option value="1">vpnmo.com</option>
                                                 <option value="3">hostdns.me</option>
                                                 <option value="4">dn3.co</option>
@@ -211,7 +243,7 @@
                                                 <option value="10">g2url.com</option>
                                             </select>
                                             <button type="submit"
-                                                class="btn btn-primary d-flex align-items-center justify-content-lg-start justify-content-center mt-lg-0 mt-20">
+                                                class="btn btn-primary ms-lg-auto d-flex align-items-center justify-content-lg-start justify-content-center mt-20">
                                                 <img src="/assets/images/icon-create.svg" width="18" class="me-10"
                                                     alt="create" />
                                                 Paste-It
