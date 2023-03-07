@@ -97,9 +97,15 @@
                     </div>
                 </div>
                 <div class="form__search position-relative mt-md-50 mt-30 p-md-20 p-10">
-                    <form action="" class="d-flex align-items-center">
-                        <input type="text" name="search" id="search" class="form-control"
-                            placeholder="Search documentation, coummunity connect...">
+                    <form action="" class="d-flex align-items-center needs-validation" novalidate>
+                        <div class="has-validation">
+                            <label for="search" class="d-nond"></label>
+                            <input type="text" name="search" id="search" class="form-control"
+                                placeholder="Search documentation, coummunity connect..." required>
+                            <div class="invalid-feedback">
+                                Please enter subject
+                            </div>
+                        </div>
                         <button type="submit"
                             class="btn p-0 ms-20 d-flex align-items-center justify-content-center btn-primary">
                             <img src="/assets/images/icon-search.svg" width="20" alt="search">
