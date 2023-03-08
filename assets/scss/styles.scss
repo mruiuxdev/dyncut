@@ -91,7 +91,7 @@
 		@include media-breakpoint-down(lg) {
 			position: absolute;
 			top: 0;
-			right: size(100);
+			right: size(80);
 		}
 		&:hover {
 			background: $primary;
@@ -156,6 +156,73 @@
 			}
 		}
 	}
+	.notification {
+		@include media-breakpoint-down(lg) {
+			position: absolute;
+			right: size(216);
+		}
+		@include media-breakpoint-down(md) {
+			right: size(60);
+		}
+		.dropdown-toggle {
+			color: $white;
+			&::after {
+				display: none;
+			}
+			span {
+				width: size(8);
+				height: size(8);
+				border-radius: size(100);
+				background: $primary;
+				position: absolute;
+				top: 0;
+				right: size(1);
+			}
+		}
+		.dropdown-menu {
+			border-radius: size(10);
+			padding: size(15);
+			@include radialGradient();
+			@include shadow();
+			border: none;
+			color: $white;
+			min-width: size(320);
+			left: auto;
+			right: size(19);
+			top: 131%;
+			@include transition(0.3s all ease-in-out);
+			@include media-breakpoint-down(md) {
+				min-width: size(270);
+			}
+			li {
+				position: relative;
+				padding-left: size(10);
+				&::before {
+					content: "";
+					width: size(6);
+					height: size(6);
+					border-radius: 50%;
+					position: absolute;
+					top: size(6);
+					left: 0;
+					background: $primary;
+				}
+				&:not(:last-child) {
+					padding-bottom: size(15);
+				}
+				&.notification__green {
+					&::before {
+						background: #01a501;
+					}
+				}
+				&.notification__yellow {
+					&::before {
+						background: #c2bf03;
+					}
+				}
+			}
+		}
+	}
 	&.scrolled {
 		background: $body-bg;
 		margin-top: 0;
@@ -201,6 +268,16 @@
 				background: $primary;
 				border-color: $primary;
 				color: $white;
+			}
+		}
+		.notification {
+			.dropdown-toggle {
+				color: $secondary;
+			}
+			.dropdown-menu {
+				background: $off-white;
+				color: $third;
+				backdrop-filter: none;
 			}
 		}
 	}
