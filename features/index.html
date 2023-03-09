@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DYNCUT: DDNS,Short URL, and text that is to the point">
+    <meta name="keywords" content="dyncut, domain, short url, paste it, multiple domain, api">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>DYNCUT: DDNS,Short URL, and text that is to the point</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="/assets/libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div id="loader" class="bg-white">
+        <img src="/assets/images/dyncut.gif" width="120" alt="dyncut" class="mb-10">
+        <img src="/assets/images/dyncut-loader.svg" width="200" alt="dyncut">
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/dyncut.svg" width="180" alt="dyncut" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav py-lg-20 px-30 py-md-50 py-30 rounded-pill mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/company">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="/account/signin.html">Login</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="/account/signup.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown notification">
+                <button class="bg-transparent dropdown-toggle border-0 me-20 p-0 position-relative" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i data-feather="bell"></i>
+                    <span></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="notification__green">
+                        <div class="desc">New domain added on3.co</div>
+                    </li>
+                    <li class="notification__yellow">
+                        <div class="desc">Scheduled maintenance on 01.03.2023 1pm to 2pm</div>
+                    </li>
+                </ul>
+            </div>
+            <a href="/account/signin.html" class="btn d-md-inline-block d-none">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <div class="banner internal__banner bg-dark py-md-200 pt-100 pb-200">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <div class="text-white">
+                            <div class="heading text-primary text-center">
+                                <h1>Features</h1>
+                            </div>
+                            <div class="mt-30 desc text-center">
+                                Combine everything in one link, online content, digital products, subscriptions and
+                                more.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features__items position-relative py-lg-100 py-md-80 py-50">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-dashboard.svg" width="50" alt="dashboard" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">
+                                Dynamic DNS (DDNS)
+                            </div>
+                            <div class="desc mt-20">
+                                dyncut allows users to set up a custom hostname for their dynamic IP address, which can
+                                change over time. This allows users to access their devices or services remotely without
+                                needing to know the IP address each time.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-browser.svg" width="50" alt="browser" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">
+                                Short URL
+                            </div>
+                            <div class="desc mt-20">
+                                dyncut also offers a URL shortening service, which allows users to create short and
+                                easy-to-remember links for their long URLs. This is especially useful for sharing links
+                                on social media or in other situations where character count is limited.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-api.svg" width="50" alt="api" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">Paste-it</div>
+                            <div class="desc mt-20">
+                                dyncut has a "Paste-it" feature that allows users to easily share text or code snippets
+                                with others. Users can create a new paste and share the generated link with anyone they
+                                want.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-dashboard.svg" width="50" alt="dashboard" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">
+                                Custom domains
+                            </div>
+                            <div class="desc mt-20">
+                                dyncut offers the option to use custom domains for both DDNS and short URLs, which can
+                                make the links look more professional and memorable.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-browser.svg" width="50" alt="browser" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">
+                                API
+                            </div>
+                            <div class="desc mt-20">
+                                dyncut provides an API for developers who want to integrate its services into their own
+                                applications or websites.
+
+
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-api.svg" width="50" alt="api" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">Security</div>
+                            <div class="desc mt-20">
+                                dyncut employs various security measures to protect user data and prevent abuse, such as
+                                SSL encryption, rate limiting, and CAPTCHA verification.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-api.svg" width="50" alt="api" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">Analytics</div>
+                            <div class="desc mt-20">
+                                dyncut provides basic analytics for each link, including the number of clicks and the
+                                referrers. This can help users track the performance of their links and optimize their
+                                campaigns.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-api.svg" width="50" alt="api" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">Easy-to-use interface</div>
+                            <div class="desc mt-20">
+                                dyncut has a user-friendly interface that allows users to manage their DNS, URLs, and
+                                pastes with ease. The platform is accessible from any device with an internet
+                                connection.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-api.svg" width="50" alt="api" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">Multiple protocols support</div>
+                            <div class="desc mt-20">
+                                dyncut supports multiple protocols for DDNS, including HTTP, HTTPS, DNS, and DNS over
+                                HTTPS.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="item text-secondary bg-off-white d-block text-center py-40 px-30">
+                            <div class="icon">
+                                <img src="/assets/images/icon-api.svg" width="50" alt="api" />
+                            </div>
+                            <div class="title fw-semibold text-secondary mt-20">Affordable pricing</div>
+                            <div class="desc mt-20">
+                                dyncut offers affordable pricing plans for its premium features, which include custom
+                                domains, more pastes, and API access. There is also a free plan for basic usage.
+                            </div>
+                            <div
+                                class="arrow ms-auto rounded-pill d-flex align-items-center justify-content-center mt-md-50 mt-30">
+                                <img src="/assets/images/arrow-link.svg" width="20" alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark pt-md-50 pt-30 pb-30 text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <a href="/" class="logo d-block">
+                        <img src="/assets/images/dyncut-footer.svg" width="200" class="img-fluid" alt="dyncut" />
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-30">
+                    <div class="title fw-semibold">Features</div>
+                    <div class="links features__links d-flex flex-wrap mt-30">
+                        <a href="/fetaures/featur-details.html">Passwordless Security</a>
+                        <a href="/fetaures/featur-details.html">AI Powered</a>
+                        <a href="/fetaures/featur-details.html">Compatible HTTP Update Protocol</a>
+                        <a href="/fetaures/featur-details.html">API Support</a>
+                        <a href="/fetaures/featur-details.html">Multiple Domain Names</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-30">
+                    <div class="title fw-semibold">Resources</div>
+                    <div class="links d-flex flex-wrap mt-30">
+                        <a href="/videos">Videos</a>
+                        <a href="/documentations">Online Documentations</a>
+                        <a href="/community">Experts Blog</a>
+                        <a href="/support">Contact Support</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mt-lg-0 mt-30">
+                    <div class="title fw-semibold">Subscription</div>
+                    <div class="links d-flex flex-wrap mt-30">
+                        <a href="/pricing">Offers & Pricing</a>
+                        <a href="/faqs">FAQs</a>
+                        <a href="/account/signin.html">Signup</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-30 pt-md-0 pt-30">
+                <div
+                    class="d-flex flex-md-nowrap flex-wrap justify-content-md-between justify-content-center align-items-end">
+                    <div>
+                        <div class="links d-flex">
+                            <a href="/">Terms & Conditions</a>
+                            <a href="/">Privacy Policy</a>
+                        </div>
+                        <div class="mt-md-20 mt-10">
+                            <div id="copyrightYear"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="social d-flex align-items-center justify-content-md-start justify-content-center mt-md-0 mt-20">
+                        <div class="title fw-semibold me-20 d-md-inline-block d-none">
+                            Follow Us:
+                        </div>
+                        <div class="media d-flex align-items-center">
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libs/jquery/jquery.min.js"></script>
+    <script src="/assets/libs/slick/slick.min.js"></script>
+    <script src="/assets/scripts/scripts.js"></script>
+    <script>
+        const copyrightFooter = `
+        © Copyright ${new Date().getFullYear()} dyncut.com - All Rights Reserved.
+`;
+        document.getElementById('copyrightYear').innerHTML = copyrightFooter;
+
+        feather.replace();
+    </script>
+</body>
+
+</html>
