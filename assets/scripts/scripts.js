@@ -148,4 +148,24 @@ $(() => {
 			],
 		});
 	}
+
+	const documentationNav = $(".documentation__nav");
+
+	if (documentationNav) {
+		$(".documentation__nav .documentation__item .icon__arrow").on(
+			"click",
+			function () {
+				$(this).toggleClass("active");
+
+				$(this).parent().next().slideToggle();
+			}
+		);
+	}
+
+	const sidebar = $(".sidebar");
+	if (sidebar) {
+		sidebar.theiaStickySidebar({
+			additionalMarginTop: 100,
+		});
+	}
 });

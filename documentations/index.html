@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DYNCUT: DDNS,Short URL, and text that is to the point">
+    <meta name="keywords" content="dyncut, domain, short url, paste it, multiple domain, api">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>DYNCUT: DDNS,Short URL, and text that is to the point</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="/assets/libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div id="loader" class="bg-white">
+        <img src="/assets/images/dyncut.gif" width="120" alt="dyncut" class="mb-10">
+        <img src="/assets/images/dyncut-loader.svg" width="200" alt="dyncut">
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/dyncut.svg" width="180" alt="dyncut" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav py-lg-20 px-30 py-md-50 py-30 rounded-pill mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/company">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="/account/signin.html">Login</a>
+                    </li>
+                    <li class="nav-item d-md-none d-block">
+                        <a class="nav-link" href="account/signup.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown notification">
+                <button class="bg-transparent dropdown-toggle border-0 me-20 p-0 position-relative" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i data-feather="bell"></i>
+                    <span></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="notification__green">
+                        <div class="desc">New domain added on3.co</div>
+                    </li>
+                    <li class="notification__yellow">
+                        <div class="desc">Scheduled maintenance on 01.03.2023 1pm to 2pm</div>
+                    </li>
+                </ul>
+            </div>
+            <a href="/account/signin.html" class="btn d-md-inline-block d-none">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <div class="banner internal__banner bg-dark py-md-200 pt-100 pb-200">
+            <div class="container">
+                <div class="text-primary text-center">
+                    <div class="heading">
+                        <h1 class="fw-bold">
+                            Documentations
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="documentations pb-lg-100 pb-md-80 pb-50">
+            <div class="container p-0 bg-off-white shadow overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-lg-3 sidebar bg-dark">
+                        <ul class="documentation__nav list-unstyled m-0 py-30 px-15   h-100">
+                            <li class="documentation__item">
+                                <a href="#introduction" class="documentation__link">
+                                    <img src="/assets/images/icon-intro.svg" width="20" class="me-10" alt="intro">
+                                    Introduction</a>
+                            </li>
+                            <li class="documentation__item dropdown__toggle">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="#keyFeatures" class="documentation__link">
+                                        <img src="/assets/images/icon-key.svg" width="20" class="me-10" alt="intro">
+                                        Key Features</a>
+                                    <div class="icon__arrow">
+                                        <i data-feather="chevron-right"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown__list documentation__nested bg-dark">
+                                    <ul class="documentation__nav list-unstyled m-0">
+                                        <li class="documentation__item dropdown__toggle">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <a href="#dyncutSystem"
+                                                    class="documentation__link documentation__nested__link">
+                                                    DYNCUT System</a>
+                                                <div class="icon__arrow">
+                                                    <i data-feather="chevron-right"></i>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__list documentation__nested bg-dark">
+                                                <ul class="documentation__nav list-unstyled m-0 p-0">
+                                                    <li class="documentation__item">
+                                                        <a href="#getStarted"
+                                                            class="documentation__link documentation__nested__link">
+                                                            Get Started</a>
+                                                    </li>
+                                                    <li class="documentation__item dropdown__toggle">
+                                                        <ul class="documentation__nav list-unstyled m-0">
+                                                            <li class="documentation__item dropdown__toggle">
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-center">
+                                                                    <a href="#ddnsWithDyncut"
+                                                                        class="documentation__link documentation__nested__link">
+                                                                        DDNS with DYNCUT</a>
+                                                                    <div class="icon__arrow">
+                                                                        <i data-feather="chevron-right"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="dropdown__list documentation__nested bg-dark">
+                                                                    <ul
+                                                                        class="documentation__nav list-unstyled m-0 p-0">
+                                                                        <li class="documentation__item">
+                                                                            <a href="#creatingDddns"
+                                                                                class="documentation__link documentation__nested__link">
+                                                                                Creating DDNS</a>
+                                                                        </li>
+                                                                        <li class="documentation__item">
+                                                                            <a href="#MaintainigDdns"
+                                                                                class="documentation__link documentation__nested__link">
+                                                                                Maintaining your DDNS</a>
+                                                                        </li>
+                                                                        <li class="documentation__item">
+                                                                            <a href="#ddnsClient"
+                                                                                class="documentation__link documentation__nested__link">
+                                                                                Using DYNCUT DDNS Client</a>
+                                                                        </li>
+                                                                        <li class="documentation__item">
+                                                                            <a href="#softwareDdns"
+                                                                                class="documentation__link documentation__nested__link">
+                                                                                Third party software- DDNS Updater</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="documentation__item">
+                                                        <a href="#shortUrl"
+                                                            class="documentation__link documentation__nested__link">
+                                                            Short Url</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="documentation__item dropdown__toggle">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <a href="#additionaFeatures"
+                                                    class="documentation__link documentation__nested__link">
+                                                    Additional Features</a>
+                                                <div class="icon__arrow">
+                                                    <i data-feather="chevron-right"></i>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__list documentation__nested bg-dark">
+                                                <ul class="documentation__nav list-unstyled m-0 p-0">
+                                                    <li class="documentation__item">
+                                                        <a href="#apiUrl"
+                                                            class="documentation__link documentation__nested__link">
+                                                            API for Short URL REST Profile</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="documentation__item">
+                                <a href="#glossary" class="documentation__link">
+                                    <img src="/assets/images/icon-glossary.svg" width="20" class="me-10" alt="glossary">
+                                    Glossary</a>
+                            </li>
+                            <li class="documentation__item">
+                                <a href="#version" class="documentation__link">
+                                    <img src="/assets/images/icon-version.svg" width="20" class="me-10" alt="version">
+                                    Version</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="documentation__data">
+                            <div class="p-30">
+                                <div id="introduction">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary">
+                                            Introduction
+                                        </h2>
+                                    </div>
+                                    <div class="desc mt-30">
+                                        <p>Dynamic DNS (DDNS) is a method of automatically updating a name server in the
+                                            Domain
+                                            Name System (DNS), often in real-time, with the active DNS configuration of
+                                            its
+                                            hostnames, addresses or other information.</p>
+                                        <p>A DDNS service enables internet-connected devices to have a fixed domain
+                                            name,
+                                            even
+                                            if their IP address changes dynamically, as it often does for devices
+                                            connected
+                                            to
+                                            the internet through a router.
+                                        </p>
+                                        <p>
+                                            DDNS is particularly useful for hosting servers, websites or other services
+                                            at
+                                            home,
+                                            as it allows for easy remote access even if the IP address of the network
+                                            changes.
+                                            For example, you can set up a DDNS service and associate it with a hostname
+                                            like
+                                            "myhome.dyncut.net". This way, even if your home IP address changes, you can
+                                            still
+                                            access your home network by simply entering the hostname "myhome.ddns.net"
+                                            in
+                                            your
+                                            web browser.
+                                        </p>
+                                        <div class="text-end fst-italic">
+                                            #DynCut #Introduction #Scope #UserManual
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-40">
+                                <div id="keyFeatures">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary">
+                                            Key Features
+                                        </h2>
+                                    </div>
+                                    <ul class="list-unstyled list__check list__check__primary mt-30">
+                                        <li>Real-time updates: Dynamic DNS allows for real-time updates to domain
+                                            name
+                                            records, ensuring that your domain is always pointing to the correct IP
+                                            address.
+                                        </li>
+                                        <li>
+                                            Increased reliability: With dynamic DNS, you don't have to worry about
+                                            changes
+                                            to your IP address affecting the availability of your website or online
+                                            services.
+                                        </li>
+                                        <li>
+                                            Ease of use: Dynamic DNS services are simple to set up and use, with
+                                            minimal
+                                            technical knowledge required.
+                                        </li>
+                                        <li>
+                                            Dynamic IP support: Dynamic DNS supports dynamic IP addresses, which can
+                                            change
+                                            frequently, making it ideal for home and small business networks.
+                                        </li>
+                                        <li>
+                                            Multiple domains: With dynamic DNS, you can host multiple domains on a
+                                            single IP
+                                            address, saving you time and resources.
+                                        </li>
+                                        <li>
+                                            Security: Dynamic DNS provides a secure, encrypted connection between
+                                            your
+                                            domain and your IP address, preventing unauthorized access.
+                                        </li>
+                                        <li>
+                                            Cost-effective: Dynamic DNS services are typically low-cost or even
+                                            free,
+                                            making
+                                            it a cost-effective solution for many small businesses and individuals.
+                                        </li>
+                                        <li>
+                                            Remote access: Dynamic DNS enables remote access to your network,
+                                            allowing
+                                            you
+                                            to access your network resources from anywhere in the world.
+                                        </li>
+                                        <li>
+                                            Multiple platforms: Dynamic DNS services are available on a variety of
+                                            platforms, including Windows, Linux, MacOS, and mobile devices.
+                                        </li>
+                                        <li>
+                                            User-friendly interface: Dynamic DNS services typically have a
+                                            user-friendly
+                                            interface that is easy to navigate, making it simple for users to manage
+                                            their
+                                            domain names.
+                                        </li>
+                                    </ul>
+                                    <div class="text-end mt-30 fst-italic">
+                                        #KeyFeatures #SalientFeatures
+                                    </div>
+                                </div>
+                                <hr class="my-40">
+                                <div id="dyncutSystem">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary">
+                                            DYNCUT System
+                                        </h2>
+                                    </div> <br>
+                                    <h4 class="fw-semibold text-secondary" id="getStarted">
+                                        Getting Started
+                                    </h4>
+                                    <p>
+                                        To get started with DynCut , the first step is to appoint a admin site. Follow
+                                        the <a href="#" class="text-link">link</a> to access the portal. Login /
+                                        Register using an email address or phone
+                                        number to get an access code.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>
+                                                Enter the 4-digit access code to gain access to the portal.
+                                            </p>
+                                            <p>
+                                                The admin site interface provides the ability to create DDNS , Short
+                                                URLs, and Paste to file. Additionally, the admin site can give access to
+                                                various users profile and account data.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="https://www.dyncut.com/help/login.png"
+                                                class="img-fluid rounded d-block" alt="img">
+                                            <div class="text-end fst-italic">#DynCut #adminSite #AccessCode
+                                                #GettingStarted</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-40">
+                                <div id="ddnsWithDyncut">
+                                    <div class="heading" id="creatingDddns">
+                                        <h2 class="fw-bold text-primary">
+                                            Create DDNS with DynCut
+                                        </h2>
+                                    </div> <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>Navigate to Dynamic Tools. To create a new DDNS, click the button to
+                                                <strong class="fst-italic text-primary">“Create ”</strong>.
+                                            </p>
+                                            <p> Fill out the fields to set up the workflow, the following table explains
+                                                the fields and the possible inputs.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="https://www.dyncut.com/help/ddnscreate.png"
+                                                class="img-fluid rounded d-block" alt="img">
+                                            <div class="text-end fst-italic">#DNS #DDNS #creatingDDNS</div>
+                                        </div>
+                                    </div><br>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="1%">
+                                                        Field Name
+                                                    </th>
+                                                    <th width="1%">
+                                                        Value Range and Description
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Domain</p>
+                                                        <img src="https://www.dyncut.com/help/hostname.png"
+                                                            class="img-fluid d-block" alt="pic">
+                                                    </td>
+                                                    <td width="1%">
+                                                        What is a Hostname? Every time you want to connect to a service
+                                                        in
+                                                        your location, a hostname is utilized rather than your IP
+                                                        address.
+                                                        The format of a hostname is your-hostname.domain.com. They are
+                                                        therefore the same as the names found in URLs used to browse the
+                                                        internet.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Domain</p>
+                                                        <img src="https://www.dyncut.com/help/domain.png"
+                                                            class="img-fluid d-block" alt="pic">
+                                                    </td>
+                                                    <td width="1%">
+                                                        Write a description to describe the purpose of the workflow.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">IP address
+                                                        </p>
+                                                        <img src="https://www.dyncut.com/help/ip.png"
+                                                            class="img-fluid d-block" alt="pic">
+                                                    </td>
+                                                    <td width="1%">
+                                                        IP Address, where you ought to see your IP address right now.
+                                                        You
+                                                        can now input a different IP address if you want the host's IP
+                                                        address to be different from where it is right now.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Status
+                                                        </p>
+                                                        <img src="https://www.dyncut.com/help/status.png"
+                                                            class="img-fluid d-block" alt="pic">
+                                                    </td>
+                                                    <td width="1%">
+                                                        If you want to stop using this hostname but maintain it so no
+                                                        one
+                                                        else can use it.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <br>
+                                    <p>Click on the <strong class="fst-italic text-primary">“Create”</strong> Button
+                                        after configuring the options.</p>
+                                </div>
+                                <hr class="my-40">
+                                <div id="ddnsWithDyncut">
+                                    <div class="heading" id="MaintainigDdns">
+                                        <h2 class="fw-bold text-primary">
+                                            Maintaining your DDNS
+                                        </h2>
+                                    </div> <br>
+                                    <p>Using the list below, you can mainataion your DDNS records.
+                                    </p>
+                                    <img src="https://www.dyncut.com/help/ddnslist.png" alt="pic"
+                                        class="img-fluid rounded">
+                                    <div class="text-end fst-italic">#WorkflowInitiation #InputForm
+                                    </div>
+                                    <br>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="1%">
+                                                        Field Name
+                                                    </th>
+                                                    <th width="1%">
+                                                        Value Range and Description
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Hostname</p>
+                                                    </td>
+                                                    <td width="1%">
+                                                        This is the hostname you have created. Use the icon to copy the
+                                                        hostname.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Key</p>
+
+                                                    </td>
+                                                    <td width="1%">
+                                                        This key is used for DDNS client update.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Edit / Update
+
+                                                        </p>
+                                                    </td>
+                                                    <td width="1%">
+                                                        Use edit <i data-feather="edit" class="text-small px-5"></i> to
+                                                        update
+                                                        the status of your
+                                                        hostname.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="text-primary fw-semibold">Delete
+                                                        </p>
+                                                    </td>
+                                                    <td width="1%">
+                                                        Use delete <i data-feather="trash" class="text-small px-5"></i>
+                                                        to
+                                                        delete
+                                                        your hostname.
+                                                        (can not be undone.)
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <hr class="my-40">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-0 order-1 mb-lg-0 mb-20">
+                                        <img src="https://www.dyncut.com/help/dyncutclient.png"
+                                            class="img-fluid rounded" alt="pic">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="heading" id="ddnsClient">
+                                            <h2 class="fw-bold text-primary">
+                                                DynCut DDNS Client
+                                            </h2>
+                                        </div>
+                                        <p>To automatically update the DNS record of a domain name with the IP
+                                            address of a computer or router, use our unique DDNS software, which
+                                            runs on your computer.
+                                        </p>
+                                        <div class="text-end fst-italic">#WorkflowInitiation #InputForm
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>A visual canvas is available on which the site manager can define steps, to
+                                    determine the sequence of events in a workflow. Thus, a workflow can be
+                                    broken up into multiple smaller tasks and decisions, with a responsible user
+                                    assigned for each task.
+                                </p>
+                                <p>
+                                    The following buttons are available to edit, view and save the workflow
+                                    representation:
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered">
+                                        <thead class="bg-primary text-white">
+                                            <tr>
+                                                <th width="1%">
+                                                    Action
+                                                </th>
+                                                <th width="1%">
+                                                    Description and Function
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="1%">
+                                                    <img src="https://www.dyncut.com/help/clientkey.png"
+                                                        class="img-fluid d-block" alt="pic">
+                                                </td>
+                                                <td width="1%">
+                                                    <p>
+                                                        This is your key related to hostname you have created. You
+                                                        can get this from the DDNS list.
+                                                    </p>
+                                                    <img src="https://www.dyncut.com/help/ddnslisthi.png" alt="pic"
+                                                        class="img-fluid d-block">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1%">
+                                                    <img src="https://www.dyncut.com/help/clientfreq.png"
+                                                        class="img-fluid d-block" alt="pic">
+                                                </td>
+                                                <td width="1%">
+                                                    Set the update frequency in minutes.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1%">
+                                                    <img src="https://www.dyncut.com/help/clienten.png"
+                                                        class="img-fluid d-block" alt="pic">
+                                                </td>
+                                                <td width="1%">
+                                                    You can set this automatic update status.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1%">
+                                                    <img src="https://www.dyncut.com/help/clienten.png"
+                                                        class="img-fluid d-block" alt="pic">
+                                                </td>
+                                                <td width="1%">
+                                                    Manual update tab.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1%">
+                                                    <img src="https://www.dyncut.com/help/clienttest.png"
+                                                        class="img-fluid d-block" alt="pic">
+                                                </td>
+                                                <td width="1%">
+                                                    Test your connections to DynCut servers.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1%">
+                                                    <img src="https://www.dyncut.com/help/clientlog.png"
+                                                        class="img-fluid d-block" alt="pic">
+                                                </td>
+                                                <td width="1%">
+                                                    View log information and when it was last updated.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr class="my-40">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-0 order-1 mb-lg-0 mb-20">
+                                        <img src="https://www.dyncut.com/help/ddnsclient.png" class="img-fluid rounded"
+                                            alt="pic">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="heading" id="softwareDdns">
+                                            <h2 class="fw-bold text-primary">
+                                                Third party software- DDNS Updater
+                                            </h2>
+                                        </div>
+                                        <p>this is a freely aviable software provided by Wombat Holdings, Inc.
+                                        </p>
+                                        <div class="text-end fst-italic">#DDNSUpdater
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p class="text-secondary fw-semibold">DDNS Updater has the following features:
+                                </p>
+                                <ul class="list-unstyled list__check list__check__primary p-0 m-0">
+                                    <li>Compatible with a large number of DDNS services, thanks to a
+                                        configurable HTTP API</li>
+                                    <li>Minimizes API calls, e.g. by persistent caching of the IP address and
+                                        local IP matching</li>
+                                    <li>Configurable check and update intervals</li>
+                                    <li>Works with IPv4 and IPv6 (including dual-stack)</li>
+                                    <li>Able to send email when the detected IP address changes</li>
+                                    <li>Runs as a Windows service, so that updating occurs even when no-one is
+                                        logged in</li>
+                                    <li>Completely free of charge with no adware or spyware</li>
+                                    <li>No transmission/collection of data</li>
+                                </ul>
+                                <br>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered">
+                                        <thead class="bg-primary text-white">
+                                            <tr>
+                                                <th width="1%">
+                                                    Field Name
+                                                </th>
+                                                <th width="1%">
+                                                    Value Range and Description
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="1%">
+                                                    <p class="fw-semibold text-secondary">External check URL</p>
+                                                </td>
+                                                <td width="1%">
+                                                    <p>
+                                                        This will be http://[KEY].dyncut.com/update/
+                                                    </p>
+                                                    <p>The [KEY] is unique for each DDNS you have created. Also you
+                                                        can get it directly from the your DDNS list using the
+                                                        setting icon</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="1%">
+                                                    <p class="semibold text-secondary">IPV4 update URL</p>
+                                                </td>
+                                                <td width="1%">
+                                                    <p>http://[KEY].dyncut.com/update/</p>
+                                                    <p>The [KEY] is unique for each DDNS you have created. Also you
+                                                        can get it directly from the your DDNS list using the
+                                                        setting icon</p>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                <p>These the only information you need to fill. Then click save. For the app
+                                    specific configurations, please refere to the developer <a
+                                        href="https://ddnsupdater.videocoding.org/documentation.html" class="text-link"
+                                        target="_b
+                                        ">website</a>. 
+                                </p>
+                                <hr class="my-40">
+                                <div id="shortUrl">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary">
+                                            Short URL
+                                        </h2>
+                                    </div>
+                                    <br>
+                                    <p>Go to the <strong class="fst-italic text-primary">“SHORT URL”</strong>
+                                        interface and select the option to <strong
+                                            class="fst-italic text-primary">“Create”</strong> to create a new
+                                        site.
+
+                                    </p>
+                                    <img src="https://www.dyncut.com/help/urlcreate.png" alt="pic"
+                                        class="img-fluid rounded d-block">
+                                    <div class="text-end fst-italic">#ShortURL #urlcreate
+                                    </div>
+                                    <br>
+                                    <p>A new short URL is created by filling the contents of this form:</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="1%">
+                                                        URL
+                                                    </th>
+                                                    <th width="1%">
+                                                        this is autoGenerated
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Domain</p>
+                                                        <img src="https://www.dyncut.com/help/urldomain.png" alt="pic"
+                                                            class="img-fluid d-block">
+                                                    </td>
+                                                    <td width="1%">
+                                                        Select the domain where your short url will be part of.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="semibold text-secondary">Long URL</p>
+                                                        <img src="https://www.dyncut.com/help/urllong.png" alt="pic"
+                                                            class="img-fluid d-block">
+                                                    </td>
+                                                    <td width="1%">
+                                                        Paste or type the long url you would like to shorten.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="text-end fst-italic">#AccessControl #Users #Groups</div>
+                                </div>
+                                <hr class="my-40">
+                                <div id="additionaFeatures">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary" id="apiUrl">
+                                            Additional Features
+                                        </h2>
+                                    </div>
+                                    <br>
+                                    <p class="fw-semibold text-secondary">Short URL - REST API Profile
+                                    </p>
+                                    <p class="text-primary fst-italic">REST emd point is https://www.dyncut.com/.</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="1%">
+                                                        Function name
+                                                    </th>
+                                                    <th width="1%">
+                                                        Description
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <div class="text-primary fw-semibold">
+                                                            /rest/app/api/v1/main/url/add
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secodary">
+                                                            HEADER VALUE
+                                                        </p>
+                                                        <code>X-API-Key:[KEY from the account page]
+                                                    </code>
+                                                        <br>
+                                                        <p class="fw-semibold text-secodary">
+                                                            PAYLOAD VALUE
+                                                        </p>
+                                                        <code>{ "domainName": "vpnmo.com", "longUrl": "https://your.domain.com/aBcDe012" }</code>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <div class="text-primary fw-semibold">
+                                                            /rest/app/api/v1/main/url/delete
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secodary">
+                                                            HEADER VALUE
+                                                        </p>
+                                                        X-API-Key:[KEY from the account page]
+
+                                                        </code>
+                                                        <br>
+                                                        <p class="fw-semibold text-secodary">
+                                                            PAYLOAD VALUE
+                                                        </p>
+                                                        <code>{ "shorturl": "https://aBcDe012.domain.com/" }
+                                                        </code>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="text-end fst-italic">#UserProfile #Users</div>
+                                </div>
+                                <hr class="my-40">
+                                <div id="glossary">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary">
+                                            Glossary
+                                        </h2>
+                                    </div>
+                                    <br>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="1%">
+                                                        Name of the Term
+                                                    </th>
+                                                    <th width="1%">
+                                                        Description
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Access Code
+                                                        </p>
+                                                        <div class="fst-italic">#AccessCode
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        Code received by SMS or Email to allow the user to access the
+                                                        application during registration or login
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Fast WF
+                                                        </p>
+                                                        <div class="fst-italic">#FastWF
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        Name of the application to regulate, process and monitor
+                                                        workflows
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Input Form
+                                                        </p>
+                                                        <div class="fst-italic">#InputForm
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        A form that is created on a site such that every user of the
+                                                        workflow can add information, make decisions, and trigger
+                                                        actions.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Iteration
+                                                        </p>
+                                                        <div class="fst-italic">#Iteration
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        A workflow step with a loop-back to repeat the same step, e.g.,
+                                                        save
+                                                        draft
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Request Counter
+                                                        </p>
+                                                        <div class="fst-italic">#RequestCounter
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        A set of numbers that track the total number of workflows that
+                                                        are
+                                                        active at a certain point of time, with details about the number
+                                                        that are initiated, running, and closed.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Site
+                                                        </p>
+                                                        <div class="fst-italic">#SiteManager
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        User of the portal who has complete control on all the
+                                                        functionalities and is responsible for the setting up of
+                                                        workflows
+                                                        and sites.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <p class="fw-semibold text-secondary">Steps
+                                                        </p>
+                                                        <div class="fst-italic">#Steps
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        Every workflow is divided into stages where an action or
+                                                        decision is
+                                                        to be taken. A responsible person may be assigned for each step.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <hr class="my-40">
+                                <div id="version">
+                                    <div class="heading">
+                                        <h2 class="fw-bold text-primary">
+                                            Version History
+                                        </h2>
+                                    </div>
+                                    <br>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th width="1%">
+                                                        Version Number
+                                                    </th>
+                                                    <th width="1%">
+                                                        Date
+                                                    </th>
+                                                    <th width="1%">
+                                                        Description
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="1%">
+                                                        <div class="fw-semibold text-secondary">V1.0
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        <div class="fw-semibold text-secondary">xx-Mar 2022
+                                                        </div>
+                                                    </td>
+                                                    <td width="1%">
+                                                        <div class="fw-semibold text-secondary">First version of User
+                                                            Manual
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark pt-md-50 pt-30 pb-30 text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <a href="/" class="logo d-block">
+                        <img src="/assets/images/dyncut-footer.svg" width="200" class="img-fluid" alt="dyncut" />
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-30">
+                    <div class="title fw-semibold">Features</div>
+                    <div class="links features__links d-flex flex-wrap mt-30">
+                        <a href="/features/feature-details.html">Passwordless Security</a>
+                        <a href="/features/feature-details.html">AI Powered</a>
+                        <a href="/features/feature-details.html">Compatible HTTP Update Protocol</a>
+                        <a href="/features/feature-details.html">API Support</a>
+                        <a href="/features/feature-details.html">Multiple Domain Names</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-30">
+                    <div class="title fw-semibold">Resources</div>
+                    <div class="links d-flex flex-wrap mt-30">
+                        <a href="/videos">Videos</a>
+                        <a href="/documentations">Online Documentations</a>
+                        <a href="/community">Experts Blog</a>
+                        <a href="/support">Contact Support</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mt-lg-0 mt-30">
+                    <div class="title fw-semibold">Subscription</div>
+                    <div class="links d-flex flex-wrap mt-30">
+                        <a href="/pricing">Offers & Pricing</a>
+                        <a href="/faqs">FAQs</a>
+                        <a href="/account/signup.html">Signup</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright mt-30 pt-md-0 pt-30">
+                <div
+                    class="d-flex flex-md-nowrap flex-wrap justify-content-md-between justify-content-center align-items-end">
+                    <div>
+                        <div class="links d-flex">
+                            <a href="/">Terms & Conditions</a>
+                            <a href="/">Privacy Policy</a>
+                        </div>
+                        <div class="mt-md-20 mt-10">
+                            <div id="copyrightYear"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="social d-flex align-items-center justify-content-md-start justify-content-center mt-md-0 mt-20">
+                        <div class="title fw-semibold me-20 d-md-inline-block d-none">
+                            Follow Us:
+                        </div>
+                        <div class="media d-flex align-items-center">
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="/" class="d-flex align-items-center justify-content-center rounded-pill"
+                                target="_blank">
+                                <i data-feather="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libs/jquery/jquery.min.js"></script>
+    <script src="/assets/libs/slick/slick.min.js"></script>
+    <script src="/assets/libs/theia/resizesensor.min.js"></script>
+    <script src="/assets/libs/theia/theia.min.js"></script>
+    <script src="/assets/scripts/scripts.js"></script>
+    <script>
+        const copyrightFooter = `
+        © Copyright ${new Date().getFullYear()} dyncut.com - All Rights Reserved.
+`;
+        document.getElementById('copyrightYear').innerHTML = copyrightFooter;
+
+        feather.replace();
+    </script>
+</body>
+
+</html>
