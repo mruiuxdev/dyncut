@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/libs/slick/slick.css" />
     <link rel="stylesheet" href="/assets/libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/libs/animate/animate.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css" />
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -104,12 +105,12 @@
         <div class="banner internal__banner bg-dark py-md-200 pt-100 pb-200">
             <div class="container">
                 <div class="text-white text-center">
-                    <div class="heading">
+                    <div class="heading wow animate__animated animate__fadeInUp">
                         <h1 class="fw-bold">
                             Send Your <span class="text-primary">Inquiry</span>
                         </h1>
                     </div>
-                    <div class="mt-30 desc">
+                    <div class="mt-30 desc wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                         24/7 We will answer your questions and problems
                     </div>
                 </div>
@@ -117,7 +118,7 @@
         </div>
 
         <div class="form__contact">
-            <div class="container">
+            <div class="container wow animate__animated animate__fadeInUp">
                 <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-xl-10 col-lg-11 mx-auto">
@@ -490,13 +491,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-10 mx-auto">
-                        <div class="data mx-auto text-center">
+                        <div class="data mx-auto text-center wow animate__animated animate__fadeInUp">
                             <div class="text-primary">Faqs</div>
                             <div class="heading text-secondary mt-20">
                                 <h2 class="fw-bold">Frequently Asked Questions</h2>
                             </div>
                         </div>
-                        <div class="accordion mt-md-50 mt-30" id="accordionExample">
+                        <div class="accordion mt-md-50 mt-30 wow animate__animated animate__fadeInUp" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
@@ -659,6 +660,9 @@
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/libs/jquery/jquery.min.js"></script>
     <script src="/assets/libs/slick/slick.min.js"></script>
+    <script src="/assets/libs/wow/wow.js"></script>
+    <script src="/assets/libs/theia/resizesensor.min.js"></script>
+    <script src="/assets/libs/theia/theia.min.js"></script>
     <script src="/assets/scripts/scripts.js"></script>
     <script>
         const copyrightFooter = `
@@ -667,6 +671,12 @@
         document.getElementById('copyrightYear').innerHTML = copyrightFooter;
 
         feather.replace();
+
+        new WOW().init();
+        const wows = document.getElementsByClassName('wow')
+        for (i = 0; i < wows.length; i++) {
+            wows[i].style.visibility = 'hidden';
+        }
     </script>
 </body>
 

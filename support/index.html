@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/libs/slick/slick.css" />
     <link rel="stylesheet" href="/assets/libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/libs/animate/animate.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css" />
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -103,7 +104,7 @@
     <main class="overflow-hidden">
         <div class="banner internal__banner bg-dark py-md-200 pt-100 pb-200">
             <div class="container">
-                <div class="text-white">
+                <div class="text-white wow animate__animated animate__fadeInUp">
                     <div class="heading">
                         <h1 class="fw-bold">
                             Need Help <br>
@@ -111,7 +112,8 @@
                         </h1>
                     </div>
                 </div>
-                <div class="form__search position-relative mt-md-50 mt-30 p-md-20 p-10">
+                <div class="form__search position-relative mt-md-50 mt-30 p-md-20 p-10 wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".2s">
                     <form action="" class="d-flex align-items-center needs-validation" novalidate>
                         <div class="has-validation">
                             <label for="search" class="d-nond"></label>
@@ -133,7 +135,7 @@
         <div class="support__categories">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                         <a href="javascript:void(0)"
                             class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center"
                             data-bs-toggle="modal" data-bs-target="#notificationModal">
@@ -145,7 +147,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                         <a href="/documentations"
                             class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center">
                             <div class="icon">
@@ -156,7 +158,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                         <a href="javascript:void(0)"
                             class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center"
                             data-bs-toggle="modal" data-bs-target="#downloadModal">
@@ -168,7 +170,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                         <a href="/community"
                             class="item rounded bg-off-white py-60 px-30 d-flex flex-column align-items-center text-center">
                             <div class="icon">
@@ -238,13 +240,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-10 mx-auto">
-                        <div class="data mx-auto text-center">
+                        <div class="data mx-auto text-center wow animate__animated animate__fadeInUp">
                             <div class="text-primary">Faqs</div>
                             <div class="heading text-secondary mt-20">
                                 <h2 class="fw-bold">Frequently Asked Questions</h2>
                             </div>
                         </div>
-                        <div class="accordion mt-md-50 mt-30" id="accordionExample">
+                        <div class="accordion mt-md-50 mt-30  wow animate__animated animate__fadeInUp" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
@@ -329,10 +331,10 @@
         <div class="no__answer position-relative bg-dark py-lg-100 py-md-80 py-50">
             <div class="container">
                 <div class="data text-center">
-                    <div class="heading text-white">
+                    <div class="heading text-white  wow animate__animated animate__fadeInUp">
                         <h2 class="fw-bold">Can’t find the answer of your issue</h2>
                     </div>
-                    <div class="mt-md-50 mt-30">
+                    <div class="mt-md-50 mt-30  wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                         <a href="/contact" class="btn btn-primary btn__arrow d-flex align-items-center mx-auto">
                             <span>Contact Us</span>
                             <img src="/assets/images/arrow-link.svg" width="20" class="ms-10" alt="arrow" />
@@ -344,7 +346,7 @@
 
         <div class="faqs support__faqs position-relative bg-body-bg py-lg-100 py-md-80 py-50">
             <div class="container">
-                <div class="data mx-auto text-center">
+                <div class="data mx-auto text-center wow animate__animated animate__fadeInUp">
                     <div class="text-primary">FAQs</div>
                     <div class="heading text-secondary mt-20">
                         <h2 class="fw-bold">
@@ -358,7 +360,7 @@
                         </p>
                     </div>
                 </div>
-                <ul class="nav nav-pills mx-auto justify-content-center rounded-pill p-10 mt-md-50 mt-30" id="pills-tab"
+                <ul class="nav nav-pills mx-auto justify-content-center rounded-pill p-10 mt-md-50 mt-30 wow animate__animated animate__fadeInUp" id="pills-tab"
                     role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="btn mb-md-0 mb-20" id="pills-videos-tab" data-bs-toggle="pill"
@@ -380,7 +382,7 @@
                         </button>
                     </li>
                 </ul>
-                <div class="tab-content mt-md-50 mt-30" id="pills-tabContent">
+                <div class="tab-content mt-md-50 mt-30 wow animate__animated animate__fadeInUp" id="pills-tabContent">
                     <div class="tab-pane fade" id="pills-videos" role="tabpanel" aria-labelledby="pills-videos-tab"
                         tabindex="0">
                         <div class="videos">
@@ -494,7 +496,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="inside__data mt-lg-0 mt-30">
+                            <div class="inside__data mt-lg-0 mt-30 ms-md-30 ms-0">
                                 <ul class="list-unstyled list__check list__check__primary mb-0">
                                     <li>Very rich documentation and step by step guide</li>
                                     <li>
@@ -688,6 +690,9 @@
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/libs/jquery/jquery.min.js"></script>
     <script src="/assets/libs/slick/slick.min.js"></script>
+    <script src="/assets/libs/wow/wow.js"></script>
+    <script src="/assets/libs/theia/resizesensor.min.js"></script>
+    <script src="/assets/libs/theia/theia.min.js"></script>
     <script src="/assets/scripts/scripts.js"></script>
     <script>
         const copyrightFooter = `
@@ -696,6 +701,12 @@
         document.getElementById('copyrightYear').innerHTML = copyrightFooter;
 
         feather.replace();
+
+        new WOW().init();
+        const wows = document.getElementsByClassName('wow')
+        for (i = 0; i < wows.length; i++) {
+            wows[i].style.visibility = 'hidden';
+        }
     </script>
 </body>
 
