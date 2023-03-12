@@ -1565,7 +1565,8 @@
   @include media-breakpoint-down(lg) {
     margin-top: size(-50);
   }
-  .col-lg-4 {
+  .col-lg-4,
+  .col-xl-3 {
     &:not(:last-child) {
       margin-bottom: size(30);
     }
@@ -1577,6 +1578,13 @@
       position: relative;
       img {
         border-radius: size(10);
+      }
+      .play__youtube {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: size(50);
       }
       .date {
         position: absolute;
