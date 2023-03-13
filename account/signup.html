@@ -56,7 +56,7 @@
                         <div class="desc text-center text-white mt-30">
                             Create an account to start using DYNCUT
                         </div>
-                        <form action="/account/verify-email.html" class="mt-30 needs-validation" novalidate>
+                        <form action="/account/select-plan.html" class="mt-30 needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div
@@ -383,6 +383,53 @@
                                         </div>
                                         <div class="valid-feedback">
                                             Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div
+                                        class="form-group mb-30 ps-60 pe-20 py-15 position-relative rounded-pill has-validation">
+                                        <label class="label__icon" for="subscription">
+                                            <img src="/assets/images/icon-subscription.svg" width="25"
+                                                alt="subscription">
+                                        </label>
+                                        <select name="subscription" id="subscription" class="form-control">
+                                            <option value="" disabled selected>Select a plan</option>
+                                            <option value="community">Community Membership</option>
+                                            <option value="monthly">Monthly Basic</option>
+                                            <option value="advanced">Monthly Advanced</option>
+                                            <option value="expert">Monthly Expert</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select one of subscription
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-30">
+                                        <div class="text-white mb-15"><img src="/assets/images/icon-security-white.svg"
+                                                width="25" alt="security"> Method to validate</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" name="method"
+                                                    id="validatByEmail" checked>
+                                                <label class="form-check-label mb-0 ms-10 text-white"
+                                                    for="validatByEmail">
+                                                    Email
+                                                </label>
+                                            </div>
+                                            <div class="form-check d-flex align-items-center ms-20">
+                                                <input class="form-check-input" type="radio" name="method"
+                                                    id="validatedByPhone">
+                                                <label class="form-check-label mb-0 ms-10 text-white"
+                                                    for="validatedByPhone">
+                                                    Phone
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
